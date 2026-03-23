@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Let’s Create TO DO LIST</h1>
+      <!-- Items adding section -->
+      <div class="adding-container">
+        <!-- input & add -->
+        <div class="input-add">
+          <input
+            type="text"
+            id="todo-item"
+            name="todo-item"
+            class="todo-item"
+            placeholder="Today's Task"
+          />
+          <!-- <button><p>Click To Add</p></button> -->
+        </div>
+        <!-- options -->
+        <div class="choose-options">
+          <p>Choose one option :</p>
+          <div class="options">
+            <button id="pending-btn" onclick="inputValue(event)">
+              <img src="./images/clock-rotate-left-solid.png" />
+              Pending
+            </button>
+            <button id="working-btn" onclick="inputValue(event)">
+              <img src="./images/pen-ruler-solid.png" alt="" srcset="" />
+              Ongoing
+            </button>
+            <button id="completed-btn" onclick="inputValue(event)">
+              <img src="./images/calendar-check-regular.png" alt="" srcset="" />
+              Completed
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- items display section -->
+      <div id="display-section"></div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
